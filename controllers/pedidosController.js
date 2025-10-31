@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 //Clase completa, hacer las demás
 const pedidosService = require('../services/pedidosService');
 exports.obtenerTodos = (req, res) => {
@@ -22,4 +21,4 @@ exports.eliminar = (req, res) => {
 const eliminado = pedidosService.eliminar(parseInt(req.params.id));
 eliminado ? res.json(eliminado) : res.status(404).json({ mensaje: 'No encontrado' });
 };
->>>>>>> e288539a44cdf042badde96643a3c01aca402d84
+
