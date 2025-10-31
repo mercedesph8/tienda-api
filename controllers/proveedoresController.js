@@ -7,11 +7,14 @@ res.json(proveedores);
 exports.obtenerPorId = (req, res) => {
 const proveedores = proveedoresService.buscarPorId(parseInt(req.params.id));
 proveedores ? res.json(proveedores) : res.status(404).json({ mensaje: 'No encontrado' });
+const proveedor = proveedoresService.buscarPorId(parseInt(req.params.id));
+proveedor ? res.json(proveedor) : res.status(404).json({ mensaje: 'No encontrado' });
 };
 exports.crear = (req, res) => {
 const nuevo = proveedoresService.crear(req.body);
 res.status(201).json(nuevo);
 };
+
 exports.actualizar = (req, res) => {
 const actualizado = proveedoresService.actualizar(parseInt(req.params.id), req.body);
 actualizado ? res.json(actualizado) : res.status(404).json({ mensaje: 'No encontrado' });
