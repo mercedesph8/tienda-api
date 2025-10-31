@@ -5,6 +5,12 @@ exports.obtenerTodos = (req, res) => {
 const pedidos = pedidosService.listar();
 res.json(pedidos);
 };
+
+exports.obtenerConProductos = (req, res) => {
+const pedidos = pedidosService.pedidosConProductos();
+res.json(pedidos);
+};
+
 exports.obtenerPorId = (req, res) => {
 const pedidos = pedidosService.buscarPorId(parseInt(req.params.id));
 pedidos ? res.json(pedidos) : res.status(404).json({ mensaje: 'No encontrado' });
