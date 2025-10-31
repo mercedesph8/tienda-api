@@ -1,32 +1,26 @@
 [
   {
-    "id": 1,
-    "nombre": "Camisa Rayas",
-    "precio": 49.99,
-    "categoriaId": 1
-  },
-  {
     "nombre": "Pantalones Vaqueros ",
     "precio": 49.99,
     "categoriaId": 1,
-    "id": 2
+    "id": 1
   },
   {
     "nombre": "Camiseta lunares ",
     "precio": 49.99,
-    "categoriaId": 1,
-    "id": 3
+    "categoriaId": 2,
+    "id": 2
   },
   {
     "nombre": "Zapatillas",
     "precio": 49.99,
-    "categoriaId": 1,
-    "id": 4
+    "categoriaId": 3,
+    "id": 3
   },
   {
     "nombre": "Cinturon ",
     "precio": 49.99,
-    "categoriaId": 1,
-    "id": 5
+    "categoriaId": 4,
+    "id": 4
   }
 ]
