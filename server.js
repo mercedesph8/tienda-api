@@ -3,7 +3,8 @@ const app = express();
 app.use(express.json());
 
 // Importar rutas
-app.use('/api/productos', require('./routes/productosRoutes'));
+app.use('api/productos', require('./routes/productosRoutes'));
+
 
 
 app.get("/", (req, res) => {
