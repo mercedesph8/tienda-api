@@ -7,12 +7,12 @@ app.use(express.json());
 
 
 app.use('/productos', require('./routes/productosRoutes'));
-app.use('/proveedores', require('./routes/proveedoresRoutes'));
+/*app.use('/proveedores', require('./routes/proveedoresRoutes'));
 app.use('/pedidos', require('./routes/pedidosRoutes'));
 app.use('/clientes', require('./routes/clientesRoutes'));
 app.use('/carritos', require('./routes/carritosRoutes'));
 app.use('/categorias', require('./routes/categoriasRoutes'));
-
+*/
 
 
 app.get("/", (req, res) => {
