@@ -10,13 +10,19 @@ fs.writeFileSync(ruta, JSON.stringify(datos, null, 2));
 }
 exports.listar = () => leer();
 exports.buscarPorId = (id) => leer().find(p => p.id === id);
+
+
 exports.crear = (nuevo) => {
 const datos = leer();
+console.log(nuevo);
 nuevo.id = datos.length ? Math.max(...datos.map(p => p.id)) + 1 : 1;
 datos.push(nuevo);
 guardar(datos);
 return nuevo;
 };
+
+
+
 exports.actualizar = (id, cambios) => {
 const datos = leer();
 const index = datos.findIndex(p => p.id === id);
