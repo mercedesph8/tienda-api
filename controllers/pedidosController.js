@@ -12,9 +12,11 @@ res.json(pedidos);
 };
 
 exports.obtenerPorId = (req, res) => {
-const pedidos = pedidosService.buscarPorId(parseInt(req.params.id));
-pedidos ? res.json(pedidos) : res.status(404).json({ mensaje: 'No encontrado' });
+    const pedido = pedidosService.buscarPorIdConProductos(parseInt(req.params.id)); // ✅ CAMBIO AQUÍ
+    pedido ? res.json(pedido) : res.status(404).json({ mensaje: 'No encontrado' });
 };
+
+
 exports.crear = (req, res) => {
 const nuevo = pedidosService.crear(req.body);
 res.status(201).json(nuevo);
