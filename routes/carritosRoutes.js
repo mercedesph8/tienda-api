@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const productosController = require('../controllers/carritosController');
+const carritosController = require('../controllers/carritosController');
 router.get('/', carritosController.obtenerTodos);
 router.get('/:id', carritosController.obtenerPorId);
 router.post('/', carritosController.crear);
