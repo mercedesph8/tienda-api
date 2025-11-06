@@ -1,6 +1,12 @@
-
 const express = require('express');
 const app = express();
+
+// Importar la función de inicialización de JSON
+const initData = require('./initData');
+
+// Ejecutar la inicialización al arrancar el servidor
+initData();
+
 app.use(express.json());
 
 // Importar rutas
@@ -11,13 +17,17 @@ app.use('/clientes', require('./routes/clientesRoutes'));
 app.use('/carritos', require('./routes/carritosRoutes'));
 app.use('/categorias', require('./routes/categoriasRoutes'));
 
-
+// Ruta raíz
 app.get("/", (req, res) => {
-res.send("🚀 Servidor Express funcionando correctamente");
+  res.send("🚀 Servidor Express funcionando correctamente");
 });
 
+// Definir el resto de routes
+// Mejora solicitada: guardar en un log de JSON todas las llamadas a la API
+// (puedes implementar un middleware de logging aquí si quieres)
 
-//definir el resto de routes
-//Mejora solicitada, guardar en un log de json todas las llamadas a la API
-app.listen(3000, () => console.log('Servidor escuchando en http://localhost:3000'));
-
+// Iniciar el servidor
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});
