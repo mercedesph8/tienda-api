@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carlos Basulto",
+    "email": "carlosbasulto.24@campuscamara.es",
+    "telefono": "687543145",
+    "direccion": "Calle Sol 15, Sevilla"
+  },
+  {
+    "id": 2,
+    "nombre": "Cristina Roman",
+    "email": "cristinaroman.24@campuscamara.es",
+    "telefono": "681294633",
+    "direccion": "Calle Salteras 6, Utrera"
+  },
+  {
+    "id": 3,
+    "nombre": "Eva Rodríguez",
+    "email": "evarodriguez@campuscamara.es",
+    "telefono": "678923478",
+    "direccion": "Plaza España 5, Sevilla"
+  },
+  {
+    "id": 4,
+    "nombre": "Mercedes Peña",
+    "email": "mercedespena.24@campuscamara.es",
+    "telefono": "666020345",
+    "direccion": "Calle Losas 15, Aznalcazar"
+  },
+  {
+    "id": 5,
+    "nombre": "Jesús Catalán",
+    "email": "jesuscatalan.24@campuscamara.es",
+    "telefono": "653247112",
+    "direccion": "Calle Ramón y Cajal 18, Aznalcazar"
+  }
+]
