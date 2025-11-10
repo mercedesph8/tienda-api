@@ -9,6 +9,20 @@ initData();
 
 app.use(express.json());
 
+
+
+
+// Importa el middleware
+const logger = require('./middlewares/logger');
+
+// Usa el middleware (para que se ejecute en cada petición)
+app.use(logger);
+
+
+
+
+
+
 // Importar rutas
 app.use('/productos', require('./routes/productosRoutes'));
 app.use('/proveedores', require('./routes/proveedoresRoutes'));
