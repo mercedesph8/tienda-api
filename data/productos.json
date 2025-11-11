@@ -22,5 +22,11 @@
     "precio": 49.99,
     "categoriaId": 4,
     "id": 4
+  },
+  {
+    "nombre": "Camisa básica blanca",
+    "precio": 19.99,
+    "categoriaId": 1,
+    "id": 5
   }
 ]
