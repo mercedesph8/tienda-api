@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 // Importar la función de inicialización de JSON
@@ -6,7 +7,7 @@ const initData = require('./initData');
 
 // Ejecutar la inicialización al arrancar el servidor
 initData();
-
+app.use(cors());
 app.use(express.json());
 
 

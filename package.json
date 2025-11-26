@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mercedesph8/tienda-api#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-validator": "^7.3.0"
   },
