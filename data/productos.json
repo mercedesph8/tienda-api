@@ -28,5 +28,17 @@
     "precio": 19.99,
     "categoriaId": 1,
     "id": 5
+  },
+  {
+    "nombre": "camisa verde",
+    "precio": 23,
+    "categoriaId": 1,
+    "id": 7
+  },
+  {
+    "nombre": "cristina",
+    "precio": 45,
+    "categoriaId": "4",
+    "id": 8
   }
 ]
