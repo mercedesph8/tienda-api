@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/mercedesph8/tienda-api#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "express-validator": "^7.3.0"
+    "express-validator": "^7.3.0",
+    "jsonwebtoken": "^9.0.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

@@ -31,6 +31,7 @@ app.use('/pedidos', require('./routes/pedidosRoutes'));
 app.use('/clientes', require('./routes/clientesRoutes'));
 app.use('/carritos', require('./routes/carritosRoutes'));
 app.use('/categorias', require('./routes/categoriasRoutes'));
+app.use('/usuario', require('./routes/usuariosRoutes'));
 
 // Ruta raíz
 app.get("/", (req, res) => {
